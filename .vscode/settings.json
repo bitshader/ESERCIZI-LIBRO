@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\User\\Documents\\Code\\Librerie\\prog-4ed.jar",
+        "c:\\Users\\User\\Documents\\VsCode\\Librerie\\prog-4ed.jar"
+    ]
+}
