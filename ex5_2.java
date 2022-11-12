@@ -1,9 +1,9 @@
-package RemakeEs;
+
 
 import prog.io.*;
 import java.util.Arrays;
 
-public class EXCinquePuntoDue {
+public class ex5_2 {
     
     public static void main(String[] args) {
 

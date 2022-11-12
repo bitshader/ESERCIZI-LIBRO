@@ -1,11 +1,11 @@
-package RemakeEs;
+
 
 import prog.io.*;
 import prog.utili.Frazione;
 
 import java.util.Arrays;
 
-public class ExCinquePuntoTre {
+public class ex5_3 {
     
     public static void main(String[] args) {
 

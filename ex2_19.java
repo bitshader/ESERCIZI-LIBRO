@@ -1,9 +1,9 @@
-package RemakeEs;
+
 
 import prog.io.*;
 import prog.utili.*;
 
-public class ExDuePuntoDiciannove {
+public class ex2_19 {
     
     public static void main(String[] args) {
 

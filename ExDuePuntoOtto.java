@@ -1,41 +1,36 @@
+
+
 import prog.io.*;
 import prog.utili.Frazione;
 
 public class ExDuePuntoOtto {
-
-    public static void main(String[] args){
+    
+    public static void main(String[] args) {
 
         ConsoleInputManager in = new ConsoleInputManager();
         ConsoleOutputManager out = new ConsoleOutputManager();
-
-        //Leggere due frazioni
-        int num = in.readInt("Il numeratore della prima frazione e': ");
-        int den = in.readInt("Il denominatore della prima frazione e': ");
-        Frazione f1 = new Frazione(num, den);
         
-        num = in.readInt("Il numeratore della seconda frazione e': ");
-        den = in.readInt("Il denominatore della seconda frazione e': ");
+        //lettura prima frazione
+        int num = in.readInt("Numeratore prima frazione: ");
+        int den = in.readInt("Denominatore prima frazione: ");
+        Frazione f1 = new Frazione(num, den);
+
+        //lettura seconda frazione
+        num = in.readInt("Numeratore seconda frazione: ");
+        den = in.readInt("Denominatore seconda frazione: ");
         Frazione f2 = new Frazione(num, den);
 
-        //Visualizzarne la somma
+        //somma,diff,prod,quoz
         Frazione somma = f1.piu(f2);
-
-        //Differenza
-        Frazione differenza = f1.meno(f2);
-
-        //Prodotto
-        Frazione prodotto = f1.per(f2);
-
-        //quoziente
-        Frazione quoziente = f1.diviso(f2);
+        Frazione diff = f1.meno(f2);
+        Frazione prod = f1.per(f2);
+        Frazione quoz = f1.diviso(f2);
         
-        //visualizzazione
-        out.print("La somma di " + f1.toString() + "e " + f2.toString());
-        out.println("e': " + somma.toString());
-        out.println("La differenza e': " + differenza.toString());
-        out.println("Il prodotto e': " + prodotto.toString());
-        out.println("Il quoziente e': " + quoziente.toString());
-
-
+        //comunicazione
+        out.println("La somma tra " + f1.toString() + " e " + f2.toString() + " e' " + somma.toString());
+        out.println("La differenza tra " + f1.toString() + " e " + f2.toString() + " e' " + diff.toString());
+        out.println("Il prodotto tra " + f1.toString() + " e " + f2.toString() + " e' " + prod.toString());
+        out.println("Il quoziente tra " + f1.toString() + " e " + f2.toString() + " e' " + quoz.toString());  
+    
     }
 }

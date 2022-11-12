@@ -1,4 +1,4 @@
-package RemakeEs;
+
 
 import prog.io.ConsoleInputManager;
 import prog.io.ConsoleOutputManager;

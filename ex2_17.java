@@ -1,9 +1,9 @@
-package RemakeEs;
+
 
 import prog.io.*;
 import prog.utili.*;
 
-public class EsDuePuntoDiciasette {
+public class ex2_17 {
     
     public static void main(String[] args) {
 

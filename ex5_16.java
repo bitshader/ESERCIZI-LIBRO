@@ -1,9 +1,9 @@
-package RemakeEs;
+
 
 import prog.io.*;
 import prog.utili.*;
 
-public class ExCinquePuntoSedici {
+public class ex5_16 {
     
     public static void main(String[] args){
 

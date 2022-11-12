@@ -1,36 +1,26 @@
+
+
 import prog.io.*;
 import prog.utili.Intero;
 
 public class ExDuePuntoUndici {
-    
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
 
         ConsoleInputManager in = new ConsoleInputManager();
         ConsoleOutputManager out = new ConsoleOutputManager();
 
+        int num1 = in.readInt("Primo addendo: ");
+        Intero add1 = new Intero(num1);
 
-        int a = in.readInt("Primo addendo? ");
-        int b = in.readInt("Secondo addendo? ");
-        int somma = a + b;
+        int num2 = in.readInt("Secondo addendo: ");
+        Intero add2 = new Intero(num2);
 
-        Intero c = new Intero(a);
-        Intero d = new Intero(b);
-        Intero s = new Intero(somma);
+        int som = num1 + num2;
+        Intero somma = new Intero(som);
 
+        out.println(num1 + " + " + num2 + " = " + som );
+        out.println(add1.toString() + " + " + add2.toString() + " = " + somma.toString());
 
-        out.print(c.intValue());
-        out.print(" + ");
-        out.print(d.intValue());
-        out.print(" = ");
-        out.println(s.intValue());
-        out.print(c.toString());
-        out.print(" + ");
-        out.print(d.toString());
-        out.print(" = ");
-        out.println(s.toString());
-
-
-
-
-    }
+    }    
 }

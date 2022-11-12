@@ -1,16 +1,18 @@
+
+
 import prog.io.*;
 
 public class ExDuePuntoDue {
-    
-    public static void main(String[] args){
-    ConsoleInputManager in = new ConsoleInputManager();
-    ConsoleOutputManager out = new ConsoleOutputManager();
 
-        //leggi i due numeri
-        int num1 = in.readInt("Primo numero? ");
-        int num2 = in.readInt("Secondo numero? ");
+    public static void main(String[] args) {
+        ConsoleInputManager in = new ConsoleInputManager();
+        ConsoleOutputManager out = new ConsoleOutputManager();
 
-        //Calcolo della somma
+        //leggere i due numeri 
+        int num1 = in.readInt("Inserire il primo numero: ");
+        int num2 = in.readInt("Inserire il secondo numero: ");
+
+        //calcolo della somma
         int somma = num1 + num2;
 
         //comunicazione
@@ -18,5 +20,5 @@ public class ExDuePuntoDue {
         out.print(" e " + num2);
         out.print(" e' " + somma);
     
-    }    
+    }
 }

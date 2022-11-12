@@ -11,12 +11,12 @@ public class SeqeunzaInteri {
         int[] tabella = new int[MAX];
         
         int pos = 0;
-        int x = in.readInt();
+        int x = in.readInt("Inserire un numero:");
         while (x !=0 ) {
             tabella[pos] = x;
             pos++;
             if(pos<MAX)
-                x = in.readInt();
+                x = in.readInt("Inserire un numero:");
         }
 
         for(int i = 0; i < pos; pos++)
