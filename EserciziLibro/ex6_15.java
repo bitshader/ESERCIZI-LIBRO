@@ -1,4 +1,4 @@
-
+package EserciziLibro;
 import EsempiLibro.Quadrato;
 import prog.io.*;
 
